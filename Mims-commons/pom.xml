@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>Mims-commons</artifactId>
+	<packaging>jar</packaging>
+
+	<!--配置使用 Mims parent作为项目父级依赖[begin]-->
+	<parent>
+		<groupId>com.zhang.mims</groupId>
+		<artifactId>Mims-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<!--配置使用  Mims parent作为项目父级依赖[end]-->
+
+
+
+	<dependencies>
+		<!--配置 . Spring Cloud Starter Netflix Eureka Client依赖【begin】-->
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<!--配置 . Spring Cloud Starter Netflix Eureka Client依赖【end】-->
+
+		<!--配置Spring Cloud Starter OpenFeign 依赖【begin】-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<!--配置Spring Cloud Starter OpenFeign 依赖【end】-->
+		<!--配置Java JWT 依赖begin-->
+		<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>${java-jwt.version}</version>
+		</dependency>
+		<!--配置Java JWT 依赖end-->
+
+		<!-- 配置SpringFox Boot Starter 依赖【begin】-->
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>${springfox-boot-starter.version}</version>
+		</dependency>
+
+		<!-- 配置SpringFox Boot Starter 依赖【end】-->
+	</dependencies>
+</project>

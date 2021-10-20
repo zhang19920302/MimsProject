@@ -9,13 +9,13 @@
 	<!--设置项目打包格式为jar-->
 	<packaging>jar</packaging>
 
-	<!--配置使用 witmed parent作为项目父级依赖[begin]-->
+	<!--配置使用 Mims parent作为项目父级依赖[begin]-->
 	<parent>
 		<groupId>com.zhang.mims</groupId>
 		<artifactId>Mims-parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<!--配置使用 witmed parent作为项目父级依赖[end]-->
+	<!--配置使用  Mims parent作为项目父级依赖[end]-->
 
 	<dependencies>
 	<!--配置Spring Cloud Starter Netflix Eureka Server依赖[bengin]-->
