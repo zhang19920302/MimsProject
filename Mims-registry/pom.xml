@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<artifactId>Mims-registry</artifactId>
+	<!--设置项目打包格式为jar-->
+	<packaging>jar</packaging>
+
+	<!--配置使用 witmed parent作为项目父级依赖[begin]-->
+	<parent>
+		<groupId>com.zhang.mims</groupId>
+		<artifactId>Mims-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<!--配置使用 witmed parent作为项目父级依赖[end]-->
+
+	<dependencies>
+	<!--配置Spring Cloud Starter Netflix Eureka Server依赖[bengin]-->
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-server -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
+		<!--配置Spring Cloud Starter Netflix Eureka Server依赖[end]-->
+	</dependencies>
+</project>
