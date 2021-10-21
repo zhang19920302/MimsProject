@@ -32,4 +32,13 @@ public class BaseConstants {
 	 * 默认每页当前显示数量
 	 */
 	public static final  Integer PAGE_SIZE=Integer.parseInt(props.getProperty("base.page.size"));
+	/**
+	 *<b>加密密钥信息</b>
+	 */
+	public static final String SECRET_KEY=props.getProperty("base.secret.key");
+	/**
+	 * <b>默认用户有效时间</b>
+	 */
+	public static final Long EXPIRE_AUTH_SECOND=Long .parseLong(props.getProperty("base.expire.auth.second")) ;
+
 }
