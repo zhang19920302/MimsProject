@@ -1,0 +1,7 @@
+###### 设置项目端口号
+server:
+  port: 11222
+### 配置所需要的配置文件
+spring:
+  profiles:
+    active:   commons, data

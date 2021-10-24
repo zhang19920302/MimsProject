@@ -20,7 +20,6 @@
 
 	<dependencies>
 		<!--配置 . Spring Cloud Starter Netflix Eureka Client依赖【begin】-->
-		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -33,8 +32,8 @@
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 		<!--配置Spring Cloud Starter OpenFeign 依赖【end】-->
+
 		<!--配置Java JWT 依赖begin-->
-		<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
 		<dependency>
 			<groupId>com.auth0</groupId>
 			<artifactId>java-jwt</artifactId>

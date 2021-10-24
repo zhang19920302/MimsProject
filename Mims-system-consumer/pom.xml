@@ -5,8 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 
-	<artifactId>Mims-registry</artifactId>
-	<!--设置项目打包格式为jar-->
+	<artifactId>Mims-system-consumer</artifactId>
 	<packaging>jar</packaging>
 
 	<!--配置使用 Mims parent作为项目父级依赖[begin]-->
@@ -17,14 +16,18 @@
 	</parent>
 	<!--配置使用  Mims parent作为项目父级依赖[end]-->
 
-	<dependencies>
-	<!--配置Spring Cloud Starter Netflix Eureka Server依赖[bengin]-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-			<version>3.0.4</version>
-		</dependency>
 
-		<!--配置Spring Cloud Starter Netflix Eureka Server依赖[end]-->
+
+
+	<dependencies>
+		<!--配置Mims-commons依赖[begin]-->
+		<dependency>
+			<groupId>com.zhang.mims</groupId>
+			<artifactId>Mims-commons</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
+		<!--配置Mims-commons依赖[end]-->
 	</dependencies>
+
+
 </project>
